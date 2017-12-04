@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import {AlertController, NavController, IonicPage} from 'ionic-angular';
-import {ImageLoader} from "../../ionic-image-loader/src/";
+import {ImageLoader} from "ionic-image-loader";
 
 
 @IonicPage({

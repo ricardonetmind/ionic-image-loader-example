@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
-import { ImageLoaderConfig } from '../ionic-image-loader/src/';
+import { ImageLoaderConfig } from 'ionic-image-loader';
 
 @Component({
   template: `<ion-nav root="home-page"></ion-nav>`

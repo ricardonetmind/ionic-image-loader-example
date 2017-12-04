@@ -9,7 +9,13 @@
 
   <ion-slides [pager]="true">
     <ion-slide>
-      <img-loader src="https://static.pexels.com/photos/90807/pexels-photo-90807-large.jpeg" [useImg]="true"></img-loader>
+      <ion-scroll scrollX="true" scrollY="true" (tap)="tapEvent($event)" zoom="true" style="width:100%;height:100%;text-align:center;padding-bottom:100%;">
+        <div class="scroll-item" style="  width:100%; white-space: nowrap; overflow: scroll;">
+          <!-- <img [ngStyle]="{'width' : tap , 'min-width' : tap}" src="https://static.pexels.com/photos/90807/pexels-photo-90807-large.jpeg"> -->
+          <img-loader src="https://static.pexels.com/photos/90807/pexels-photo-90807-large.jpeg" [useImg]="true" [ngStyle]="{'width' : tap , 'min-width' : tap}"></img-loader>
+
+        </div>    
+      </ion-scroll>
     </ion-slide>
     <ion-slide>
       <img-loader src="https://static.pexels.com/photos/36990/pexels-photo-large.jpg" [useImg]="true"></img-loader>
